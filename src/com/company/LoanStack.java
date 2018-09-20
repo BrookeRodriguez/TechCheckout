@@ -5,7 +5,12 @@ import java.util.Queue;
 
 public class LoanStack
 {
-    private Queue<LoanObject> loanObjects = import java.util.LinkedList;
+    private Queue<LoanObject> loanObjects = new LinkedList <> ();
+
+    LoanStack ()
+    {
+        loanObjects.add(null);
+    }
 
     void addObject (String name, boolean is128GB, boolean isLaptop, boolean is61Watt)
     {
