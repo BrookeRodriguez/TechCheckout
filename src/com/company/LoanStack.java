@@ -1,15 +1,11 @@
 package com.company;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class LoanStack
 {
-    private Queue<LoanObject> loanObjects;
-
-    LoanQueue ()
-    {
-        loanObjects = new Queue<>();
-    }
+    private Queue<LoanObject> loanObjects = import java.util.LinkedList;
 
     void addObject (String name, boolean is128GB, boolean isLaptop, boolean is61Watt)
     {
@@ -49,7 +45,7 @@ public class LoanStack
 
     }
 
-    void returnLaptop (String name, boolean isLaptop)
+    void returnObject (String name, boolean isLaptop)
     {
         if (isLaptop)
         {
