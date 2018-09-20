@@ -4,12 +4,10 @@ public class Laptop
 {
     private boolean is128;
     private boolean returned;
-    private String studentName;
 
-    Laptop (boolean is128GB, String nameOfStudent)
+    Laptop (boolean is128GB)
     {
         is128 = is128GB;
-        studentName = nameOfStudent;
     }
 
     int getStorage ()
@@ -27,7 +25,7 @@ public class Laptop
         is128 = is128GB;
     }
 
-    void returnCharger ()
+    void returnLaptop ()
     {
         returned = true;
     }
@@ -35,15 +33,5 @@ public class Laptop
     boolean isReturned ()
     {
         return returned;
-    }
-
-    void setStudentName (String name)
-    {
-        studentName = name;
-    }
-
-    String getStudentName()
-    {
-        return studentName;
     }
 }

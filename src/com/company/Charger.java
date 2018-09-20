@@ -5,12 +5,10 @@ public class Charger
 {
     private boolean is61;
     private boolean returned;
-    private String studentName;
 
-    Charger(boolean is61Watts, String nameOfStudent)
+    Charger(boolean is61Watts)
     {
         is61 = is61Watts;
-        studentName = nameOfStudent;
     }
 
     int getWattage()
@@ -36,15 +34,5 @@ public class Charger
     boolean isReturned ()
     {
         return returned;
-    }
-
-    void setStudentName (String name)
-    {
-        studentName = name;
-    }
-
-    String getStudentName()
-    {
-        return studentName;
     }
 }
